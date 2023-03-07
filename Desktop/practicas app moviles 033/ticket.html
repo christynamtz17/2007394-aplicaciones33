@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickert de Compra</title>
+    <link rel="stylesheet" href="estilosticket.css">
+</head>
+<body>
+    <!--este es codigo de la notificación-->
+    <div class="contenedor1">
+        <div class="caja" id="verde">
+            <div class="texto">
+                <h5>¡Advertencia!</h5>
+                <p>¡Se añadio el artículo al ticket de compra correctamente! </p>
+            </div>
+            <button onclick="cerrarCaja('verde')">x</button>
+        </div>
+    <!--este es codigo de la notificación-->
+    </div>
+    <div class="contenedor">
+        <div>
+            <div id="ticket">
+                <h2>Ticket de Compra</h2>
+                <p>
+                    <label for="articulo">Articulo: </label>
+                    <input type="text" id="articulo" class="campo-texto">
+                </p>
+                <p>
+                    <label for="precio">Precio: </label>
+                    <input type="number" id="precio" class="campo-texto">
+                </p>
+                <button id="botoncalcular" onclick="agregarATicket()">Calcular</button>
+            
+            </div>
+            <div id="ticketCompra">
+                <p>----------Ticket--------</p>
+                <!-- Lista de Tickets aqui -->
+                <ul id="listaArticulos">
+                    
+                </ul>
+                <p id="total">Total: $</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculoticket.js"></script>
+</html>
