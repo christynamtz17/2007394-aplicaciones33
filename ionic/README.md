@@ -1,0 +1,1 @@
+primer proyecto de angular con ionic 2007394
